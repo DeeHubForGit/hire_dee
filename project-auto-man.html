@@ -37,6 +37,250 @@
         </div>
         
         <div class="section">
+            <h3>Admin Dashboard – Calendar & Alerts</h3>
+            <p>The Admin Dashboard provides a central, real-time view of all driving lessons and personal appointments in a weekly calendar format.</p>
+            
+            <img src="images/auto-man-admin-calendar.png" alt="Auto-Man Admin Dashboard showing weekly calendar with lesson bookings and alerts" style="width: 100%; max-width: 1200px; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            
+            <p>The calendar supports previous and next week navigation, quick refresh and manual appointment creation, allowing administrators to move through schedules efficiently and make changes on the fly.</p>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Calendar & Scheduling</h4>
+            <ul>
+                <li>Weekly calendar view with clear time slots for each day</li>
+                <li>Driving lesson appointments and personal appointments displayed together for full availability awareness</li>
+                <li>Colour-coded lesson entries showing duration, location and lesson type</li>
+                <li>Personal appointments block time to prevent double-booking</li>
+                <li>One-click controls to move between weeks or jump back to the current period</li>
+            </ul>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Alerts & Operational Indicators</h4>
+            <p>The dashboard includes visual alerts and counters highlighting items that require attention, including:</p>
+            <ul>
+                <li>Invalid or incomplete booking data</li>
+                <li>Payments required</li>
+                <li>Refunds required</li>
+                <li>New Contact Us messages</li>
+            </ul>
+            <p>These alerts allow administrators to quickly identify and prioritise follow-up actions without manually checking multiple screens.</p>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Operational Value</h4>
+            <p>This view enables staff to:</p>
+            <ul>
+                <li>See instructor availability at a glance</li>
+                <li>Avoid scheduling conflicts</li>
+                <li>Act quickly on payment, refund and data issues</li>
+                <li>Manage the business day-to-day from a single, secure interface</li>
+            </ul>
+            <p style="font-style: italic; color: #666; margin-top: 1rem;">Sensitive client information is restricted to authorised users only, with screenshots shown using representative data.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Admin Dashboard – Bookings Validation</h3>
+            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                <img
+                    src="images/admin-invalid-alert.png"
+                    alt="Invalid data alert icon"
+                    style="
+                    height: 2.25em;
+                    width: auto;
+                    flex-shrink: 0;
+                    margin-top: 0.1em;
+                    "
+                >
+                <p style="margin: 0;">
+                    When an invalid data alert is selected, administrators are taken directly to the
+                    Bookings view filtered to <strong>Invalid Only</strong>, showing only bookings with invalid data.
+                </p>
+            </div>
+            
+            <img src="images/auto-man-admin-bookings-invalid.png" alt="Auto-Man Admin Dashboard showing bookings with validation errors" style="width: 100%; max-width: 1200px; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            
+            <p>Each booking card highlights incomplete or invalid fields and provides inline tools to review, correct or override data well before the scheduled lesson.</p>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Data Validation & Correction</h4>
+            <ul>
+                <li>Invalid or incomplete fields (such as mobile number or address) are clearly highlighted</li>
+                <li>Mobile numbers are validated against Australian formats, with the ability for administrators to override validation when appropriate (for example, allowing "None" where a mobile number is not available)</li>
+                <li>Address validation includes Google-suggested addresses, enabling quick correction of near matches and accurate pickup locations</li>
+                <li>A "Valid" indicator allows staff to confirm when each field has been reviewed</li>
+            </ul>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Administrative Review</h4>
+            <p>An "Admin Checked" flag allows staff to confirm that a booking has been fully reviewed days ahead of the lesson, reducing last-minute issues.</p>
+            
+            <p style="font-style: italic; color: #666; margin-top: 1rem;">Sensitive client information is visible only to authorised users, with screenshots shown using representative data.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Admin Dashboard – Payments & Follow-Up</h3>
+            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                <img
+                    src="images/admin-payment-alert.png"
+                    alt="Payment required alert icon"
+                    style="
+                    height: 2.25em;
+                    width: auto;
+                    flex-shrink: 0;
+                    margin-top: 0.1em;
+                    "
+                >
+                <p style="margin: 0;">
+                    When the payment alert is selected, administrators are taken directly to the
+                    Bookings view filtered to <strong>Payment required only</strong>, showing only bookings that require payment.
+                </p>
+            </div>
+            
+            <img src="images/auto-man-admin-bookings-payments-required.png" alt="Auto-Man Admin Dashboard showing bookings requiring payment" style="width: 100%; max-width: 1200px; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+            <p>This allows administrators to quickly identify outstanding payments and take action without manually searching through upcoming lessons.</p>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Payment Tracking</h4>
+            <ul>
+                <li>Clear indicators show whether a booking has been paid</li>
+                <li>Payments can be marked as received directly on the booking</li>
+                <li>Filters allow administrators to view payment-required bookings only, streamlining follow-up</li>
+            </ul>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Operational Value</h4>
+            <p>This workflow enables staff to:</p>
+            <ul>
+                <li>Identify unpaid bookings at a glance</li>
+                <li>Follow up on payments well before the lesson date</li>
+                <li>Reduce missed or delayed payments</li>
+                <li>Keep financial status aligned with booking readiness</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h3>Admin Dashboard – Refunds & Cancellations</h3>
+            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                <img
+                    src="images/admin-refund-alert.png"
+                    alt="Refund alert icon"
+                    style="
+                    height: 2.25em;
+                    width: auto;
+                    flex-shrink: 0;
+                    margin-top: 0.1em;
+                    "
+                >
+                <p style="margin: 0;">
+                    When the refund alert is selected, administrators are taken directly to the Cancellations view with filters applied to highlight bookings that may require a refund.
+                </p>
+            </div>
+            
+            <img src="images/auto-man-admin-cancellations-refund.png" alt="Auto-Man Admin Dashboard showing cancellations requiring refunds" style="width: 100%; max-width: 1200px; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            
+            <p>The view is designed to make refund decisions clear, auditable and flexible, while still enforcing business rules by default.</p>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Refund Filtering & Eligibility</h4>
+            <p>The list is filtered to cancelled bookings, with additional filters applied for:</p>
+            <ul>
+                <li>Refund eligible</li>
+                <li>Not refunded</li>
+            </ul>
+            <ul>
+                <li>Refund eligibility is automatically determined based on business rules, including a 24-hour cancellation notice requirement</li>
+                <li>Clear indicators show whether a cancellation meets the eligibility criteria</li>
+            </ul>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Refund Processing</h4>
+            <ul>
+                <li>Administrators can mark bookings as refunded directly from the cancellation record</li>
+                <li>Refund status is clearly displayed to prevent duplicate or missed refunds</li>
+                <li>Cancellation timestamps and original booking details are shown to support accurate decision-making</li>
+            </ul>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Administrative Override</h4>
+            <ul>
+                <li>Administrators may override refund eligibility in special circumstances</li>
+                <li>This allows for discretion in cases such as exceptional client situations or goodwill refunds</li>
+                <li>Overrides balance customer care with operational control, without removing default safeguards</li>
+            </ul>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Operational Value</h4>
+            <p>This workflow enables staff to:</p>
+            <ul>
+                <li>Quickly identify refunds requiring action</li>
+                <li>Apply consistent refund rules based on cancellation timing</li>
+                <li>Handle exceptions without manual workarounds</li>
+                <li>Maintain clear financial and audit visibility for cancelled bookings</li>
+            </ul>
+            
+            <p style="font-style: italic; color: #666; margin-top: 1rem;">Sensitive client and payment information is visible only to authorised users, with screenshots shown using representative data.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Admin Dashboard – Contact Messages</h3>
+            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                <img
+                    src="images/admin-contact-message-alert.png"
+                    alt="Contact messages alert icon"
+                    style="
+                    height: 2.25em;
+                    width: auto;
+                    flex-shrink: 0;
+                    margin-top: 0.1em;
+                    "
+                >
+                <p style="margin: 0;">
+                    When the contact messages alert is selected, administrators are taken directly to the Contact Messages view filtered to show unread messages.
+                </p>
+            </div>
+            
+            <img src="images/auto-man-admin-contact-messages.png" alt="Auto-Man Admin Dashboard showing contact messages" style="width: 100%; max-width: 1200px; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            
+            <p>This view centralises all enquiries submitted through the website, allowing staff to respond quickly and keep communication organised.</p>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Message Filtering & Review</h4>
+            <ul>
+                <li>Messages are automatically filtered to Unread Only when accessed via the alert</li>
+                <li>Search and sort options allow messages to be filtered by name, email or message content</li>
+                <li>Messages are displayed in chronological order, with newest messages shown first</li>
+            </ul>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Communication Workflow</h4>
+            <ul>
+                <li>Each message displays the sender's name, email address, phone number and message content</li>
+                <li>Administrators can reply directly from the dashboard</li>
+                <li>Messages can be marked as read once actioned, keeping the alert count accurate</li>
+            </ul>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Reply & Response Handling</h4>
+            <p>Administrators can reply directly to contact messages using a built-in reply interface designed for speed and consistency.</p>
+            
+            <img
+                src="images/auto-man-admin-contact-messages-reply.png"
+                alt="Auto-Man Admin Dashboard reply interface for contact messages"
+                style="
+                    width: 100%;
+                    max-width: 720px;
+                    border-radius: 8px;
+                    margin: 1.25rem auto;
+                    display: block;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                "
+            >
+            <p>When replying:</p>
+            <ul>
+                <li>The recipient email address is automatically populated</li>
+                <li>The email subject is pre-filled with a standard reply format</li>
+                <li>A professional response template is auto-generated, including greeting, business name and contact details</li>
+            </ul>
+            <p>This reduces manual typing and ensures replies are clear, consistent and branded, while still allowing administrators to fully customise the message before sending.</p>
+            
+            <h4 style="color: #667eea; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Operational Value</h4>
+            <p>This approach enables staff to:</p>
+            <ul>
+                <li>Respond to enquiries quickly with minimal effort</li>
+                <li>Maintain a consistent and professional tone across all replies</li>
+                <li>Reduce errors when replying to client enquiries</li>
+                <li>Handle communication efficiently without leaving the admin dashboard</li>
+            </ul>
+            <p>All replies are sent from a secure, authenticated interface, with sensitive contact details visible only to authorised users.</p>
+        </div>
+        
+        <div class="section">
             <h3>Technical Highlights</h3>
             
             <div class="strength-card">
